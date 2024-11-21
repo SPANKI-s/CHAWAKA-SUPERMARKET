@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chawaka Supermarket Electronics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+        .container {
+            padding: 20px;
+        }
+        .item-category {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .item-category div {
+            width: 23%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .item-category img {
+            width: 100%;
+            height: auto;
+        }
+        .cart-area {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+        .cart-area h3 {
+            margin-top: 0;
+        }
+        .footer {
+            text-align: center;
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .email-form input, .email-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        .email-form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .email-form button:hover {
+            background-color: #555;
+        }
+        .fixed-footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Chawaka Supermarket Electronics</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Cart</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <section class="item-category">
+        <div>
+            <h2>Black Items</h2>
+            <img src="black-item.jpg" alt="Black Item">
+            <p>Explore a wide range of high-quality black electronics items.</p>
+        </div>
+        <div>
+            <h2>Ramtons Items</h2>
+            <img src="ramtons-item.jpg" alt="Ramtons Item">
+            <p>Best deals on Ramtons electronics - unbeatable quality.</p>
+        </div>
+        <div>
+            <h2>Mika Items</h2>
+            <img src="mika-item.jpg" alt="Mika Item">
+            <p>Discover the latest electronics from Mika at Chawaka Supermarket.</p>
+        </div>
+        <div>
+            <h2>Samsung Items</h2>
+            <img src="samsung-item.jpg" alt="Samsung Item">
+            <p>Find top-rated Samsung electronics for your home and office.</p>
+        </div>
+    </section>
+
+    <section class="cart-area">
+        <h3>Your Cart</h3>
+        <p>Review your selected items and modify your cart.</p>
+        <!-- Sample Cart Section -->
+        <p>Item 1: <span>$100</span> <button>-</button> <button>+</button></p>
+        <p>Item 2: <span>$150</span> <button>-</button> <button>+</button></p>
+        <p>Total: <span>$250</span></p>
+        <button>Checkout</button>
+    </section>
+
+    <section class="email-form">
+        <h3>Contact Us</h3>
+        <p>Have a question or need assistance? Send us an email.</p>
+        <form action="mailto:chawakaltdsales@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Email</button>
+        </form>
+    </section>
+</div>
+
+<div class="footer">
+    <p>MPESA Till Number: 744745</p>
+</div>
+
+<div class="fixed-footer">
+    <p>MPESA Till Number: 744745</p>
+</div>
+
+</body>
+</html>
